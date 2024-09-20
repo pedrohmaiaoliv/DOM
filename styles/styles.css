@@ -66,6 +66,10 @@ body {
 .task-list {
   list-style-type: none;
   padding: 0;
+  max-height: 300px; /* Altura máxima da lista de tarefas */
+  overflow-y: auto;  /* Habilita rolagem vertical quando as tarefas excedem a altura */
+  border-top: 1px solid #ccc; /* Borda superior para separar as tarefas */
+  margin-top: 20px;
 }
 
 .task-list li {
@@ -73,7 +77,7 @@ body {
   background-color: #fff; /* Fundo branco nas tarefas */
   border-radius: 5px;
   margin-bottom: 10px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3), /* Sombra mais intensa */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), /* Sombra mais intensa */
               0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra adicional para maior profundidade */
   display: flex;
   justify-content: space-between;
